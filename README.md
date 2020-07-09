@@ -172,3 +172,6 @@ Exercises:
     - show in output using print
 3. Get user input for radius, output the area  
 4. Calculate the area of a triangle using [ ½ * base * height ] formula, from user input.
+5. Find area of an Equilateral Triangle using the below formula: 
+
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-area.png "Area 1")
