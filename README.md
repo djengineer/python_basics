@@ -634,3 +634,237 @@ print(my_dict["greeting_2"])
 5.	Declare and empty 2D array  multi_list = [[],[],[]]
 6.	Use a nested for loop to populate the list [0,1,2,3] for each row.
 7.	[Challenge] For each cell in the 2D array, change the integers into string i.e. 0 => “zero”, 1 => ”one” , 2 => “two”
+
+# Module 8: Functions
+Functions are reusable block of codes.
+They take in some arguments(values), process it and returns a value to the main program.
+
+## Defining a function
+```
+# define our function
+def my_func():
+    print("hello function")
+# Run the program. Is anything printed in the shell?
+# To use the function, we must call our function.
+my_func()
+# is it printed out now?
+
+```
+## Passing data into functions
+We can pass values into a function.
+We must call a function.
+```
+# my_func is set to take in a variable that 
+# we will name my_string
+def my_func(my_string):
+    print("Hello function")
+    print(my_string)
+# does calling the function run?
+my_func()
+# we must parse in the parameters when we call the function
+my_func("this is the string that I will parse")
+```
+The above will have error at line 7. my_func() did not pass any value, even though the function is expecting something.\
+We erase line 7 and try again.
+```
+# my_func is set to take in a variable that 
+# we will name my_string
+def my_func(my_string):
+    print("Hello function")
+    print(my_string)
+
+# we must parse in the parameters when we call the function
+my_func("this is the string that I will parse")
+```
+### Practical example: Calculator functions
+```
+# define function
+# the variables i and j are only used within this function
+# i and j takes the values from the 2 parameters that is parsed
+
+def addition(i,j):
+    print("The sum of the 2 numbers are",i+j)
+    
+# start of main program
+
+print("To add 2 numbers:")
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+
+# input is stored as a string
+# we need to change it to a number.
+# we parse the 2 variables a and b
+
+addition(int(a),int(b))
+
+# notice that the variables a and b 
+# is now referred to as i and j in the function 
+# a is mapped to i, and b is mapped to j
+```
+### Returning a value to the main program
+```
+# what if we want to store the output of a function
+# into a variable in the main program?
+
+def addition(i,j):
+    output = i+j
+    return(output)
+    
+# we can also write it as return(i+j)
+# For clarity we put it into output variable first
+# start of main program
+
+print("To add 2 numbers:")
+a = input("Enter first number: ")
+b = input("Enter second number: ")
+
+# the function will return the value to the main program
+
+result = addition(int(a),int(b))
+
+# output of addition function is stored in result
+
+print("The sum of the 2 numbers are",result)
+```
+## Exercises:
+1.	Let’s create a simple cashier checkout program using functions for an apple shop. Each apple costs $0.80. If total purchase is more than $10, give 50% discount off the total purchase 
+2.	Gather user input asking for how many apples the user would like to buy.
+3.	Define a function, called calc_cost, to calculate the total cost. Use parameter parsing and return value to save the output of the function into a variable called total_purchase.
+4.	Define a function, called check_eligible, to check if the purchase is eligible for the discount. Return a True/False to the main program to a variable called is_eligible
+5.	If is_eligible is True, calculate and show the final_price, else show the price without discount 
+6.	Trying using the check_eligible function from within the calc_cost function
+
+# Introduction to PyGame and game design
+
+PyGame is a library that we can use to create apps with Graphical User Interface.
+
+### Basic example with a white screen
+```
+import pygame
+
+pygame.init()
+pygame.font.init()
+myfont = pygame.font.SysFont("monospace", 60)
+size = (600,300)
+screen = pygame.display.set_mode(size)
+bgcolor = (255,255,255)
+screen.fill(bgcolor)
+label = myfont.render("hello", 1, (0,0,0))
+screen.blit(label, (100, 100))    
+pygame.display.flip()
+
+```
+#### Try and answer the following questions:
+- Where do you think we can change the text?
+- How do we change the size of the screen?
+- where do we change background color?
+- where do we change font color?
+
+Colors are in RGB where (0,0,0) is black, and (255,255,255) is white.
+We can use this link for color picker
+https://www.w3schools.com/colors/colors_picker.asp
+
+Choose the RGB values
+
+## Game Loop and status flags
+The game loop is used to control start and stop of the game.
+We use status flags to keep track of the status of the game.
+```
+# The basic game loop looks like this
+
+done = False
+while done == False:
+    print("Game is running")    
+while done == True:
+    quit() # quit() is to quite the python shell
+
+```
+### Changing the flags
+```
+while done == False:
+    print("Game is running")
+    user_input = input("To quit, enter (q): ")
+    if user_input == "q":
+        # we change the flag to True
+        # once the flag changes to True, the program will jump
+        # to the next section of the code where done == True
+        print("quit game")
+        done = True
+```
+### Putting in menus into our app
+```
+# initialize
+done = False
+# first page is of the game is the main menu
+# thats why we initialize it before the game loop starts
+main_menu = True
+while done == False:
+    print("Game is running")
+    # if we are in the main menu
+    if main_menu == True:
+        print("This is the game menu:")
+        # get user to choose from the menu
+        user_choice = input("Choose between 2 options (A/B): ")
+        # run the program for each option chosen
+        if user_choice == "A":
+            print("Run Option A")
+        elif user_choice == "B":
+            print("Run Option B")
+        else:
+            user_choice = input("Choose between 2 options (A/B): ")
+    user_input = input("To quit, enter (q): ")
+    if user_input == "q":
+        print("quit game")
+        done = True
+
+```
+### Using functions
+
+If we put the whole chunk of menu code into a function, we can make our codes look cleaner
+```
+# initialize
+
+done = False
+
+# first page is of the game is the main menu
+# thats why we initialize it before the game loop starts
+
+main_menu = True
+
+def menu_function():
+  print("This is the game menu:")
+  
+  # get user to choose from the menu
+  user_choice = input("Choose between 2 options (A/B): ")
+  
+  # run the program for each option chosen
+  if user_choice == "A":
+      print("Run Option A")
+  elif user_choice == "B":
+      print("Run Option B")
+  else:
+      user_choice = input("Choose between 2 options (A/B): ")
+
+######## Main Game Loop Here ##########
+
+while done == False:
+    print("Game is running")
+    # if we are in the main menu
+    if main_menu == True:
+        menu_function()
+    user_input = input("To quit, enter (q): ")
+    if user_input == "q":
+        print("quit game")
+        done = True
+```
+
+## Activity
+Make your own clock app
+
+1. We know how to get the current time
+2. We know where to display text
+3. Start simple, we don't need any menus
+4. Combine the basic pygame example with the game loop
+5. Revisit our clock function in module 6.
+
+The end =============================
