@@ -202,7 +202,7 @@ Bonus: draw a better looking cash register.
 
 # Module 3 : If / Else Conditional Statements
 
-## Comparison Operators:
+### Comparison Operators:
 The output of a comparison will always return a True / False
 
 | Operator      | Meaning       |
@@ -214,10 +214,101 @@ The output of a comparison will always return a True / False
 | <=            | Less than or equal to   |
 | !=            | Not equal to      |
 
-## Additional Logical operators
+### Additional Logical operators
 
 | Operator      |
 | ------------- |
 | AND           |
 | OR            |
 | NOT           |
+
+### Boolean ( True/ False ) Operations
+
+```
+# declaring hungry is true
+my_var = (1==1) # what is the value of my_var?
+print(my_var)
+```
+## IF Statement
+
+```
+# declaring hungry is true
+hungry = True
+if hungry == True:
+    print("let’s go have lunch")
+```
+Will it print successfully?
+```
+# declaring hungry is true
+hungry = False
+if hungry == True:
+    print("let’s go have lunch")
+```
+Will anything be printed?
+
+## Else statement
+
+```
+# declaring hungry is true
+hungry = True
+if hungry == True:
+	Print("let’s go have lunch")
+else:
+	Print("let’s go play")
+```
+Which will be printed?
+
+## If, Else if, Else
+
+```
+# declaring hungry is true
+hungry = True
+craving = "Pizza"
+if hungry == True and craving=="Pizza":
+	print("let’s go have pizza")
+elif hungry == True and craving != "Pizza":
+	print("let’s have something else") 
+else: # not hungry
+	print("let’s go play")
+```
+elif is short for "else if". We can have many "else if", but else is the last condition.
+Else will be the check for all other conditions that we did not specify.
+
+E.g. if craving equals something else, it will print "let's go play" too.
+
+## Comparison logic not
+```
+hungry == True
+print(not hungry) # what does the output become?
+```
+"Not" will reverse the True and return False, because False is Not True.
+
+## Random number generator
+
+```
+from random import randint
+# randint will generate a random integer
+# randint(from_number, to_number)
+number = randint(0,3)
+print(number)
+# generates a random integer between 0 and 3
+```
+
+## Exercises:
+1. Find out if user input is Even or Odd number.
+    1. get input from user
+    2. convert input to integer
+    3. use the modulo math operation to test for even or odd number
+    4. show result in output using print
+        Hint: use if,elif ,else conditions. Think about how you check for even or odd using modulo i.e. finding the remainder between what and what?
+1.1.	Instead of asking the user for an input, use random to generate the initial number.
+2.  Simple part of the program that asks users what they want to buy.
+    1. get input from user 
+    2. if user input == “a”, store user’s choice as apple. If user input == “p”, store user’s choice as pear, and if user input == “s”, store user’s choice as strawberries.
+    3. print out the user’s choice.
+3. Calculating probabilities: if user chooses apple, there is a 50% chance that that apples are sold out. 
+
+## Activities:
+1. Create a Role Playing Game (RPG) using input(), print(), and if/elif/else statements. Come up with an interesting story to entertain your player with!
+You can even use math, and the random function to generate some interesting stories with probabilities in the game’s outcome!
+
