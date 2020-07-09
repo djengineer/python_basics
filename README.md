@@ -180,7 +180,8 @@ print(math.pi*20**2)
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-area.png "Area 1")
 
 where s is the length of one side of the triangle.
-hint: look at the math reference if you are unsure
+hint: look at the math reference for how to do square root
+https://docs.python.org/3/library/math.html
 
 6. Find area of triangle using trigonometry:
 
