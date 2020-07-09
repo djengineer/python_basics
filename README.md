@@ -300,7 +300,7 @@ print(number)
 ```
 
 ## Exercises:
-1. Find out if user input is Even or Odd number.
+1. Find out if user input is Even or Odd number. (hint: a number modulo 2 will give 0 for even, and 1 for odd)
     1. get input from user
     2. convert input to integer
     3. use the modulo math operation to test for even or odd number
