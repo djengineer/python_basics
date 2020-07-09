@@ -312,3 +312,92 @@ print(number)
 1. Create a Role Playing Game (RPG) using input(), print(), and if/elif/else statements. Come up with an interesting story to entertain your player with!
 You can even use math, and the random function to generate some interesting stories with probabilities in the game’s outcome!
 
+# Module 5: Data Structure 1 - Lists
+
+Lists are used to store multiple data into one variable.
+Think of it as a shelf. We use square brackets to signify lists.
+
+Declaring an empty list:
+`my_list = []`
+
+Declaring a list with data inside:
+```
+# A list is like a shelf with numbered spaces
+# A list’s index starts from 0, e.g [0,1,2,3…]
+# my_list[0] will call the first item in the list
+my_list = ["pizza","noodles","burger","fries"]
+print(my_list[0]) # this will give us "pizza"
+print(my_list[3]) # this will give us "fries"
+```
+
+## List manipulation
+
+```
+mylist = [0,1,2,3,4]
+print(mylist)
+# append() is to add a value to the back of the list.
+mylist.append(10)
+print(mylist) # 10 is added to the back of the list
+# len() is to find out the length of the list.
+# in this case, it is how many elements are there.
+print("Length of my list is",len(mylist))
+
+# Slice of lists. Extract out values 
+# elements 3rd to 5th
+print("slicing from 3rd to 5th element:")
+print(mylist[2:5])
+
+# elements beginning to 4th,5 not included
+print("slicing from beginning to 4th element:")
+print(mylist[:4])
+
+# elements 4th to end. Does not include the 3rd
+print("slicing from 4th element to the end:")
+print(mylist[3:])
+
+# elements beginning to end
+print("slicing from beginning to end:")
+print(mylist[:])
+
+# every second element using steps
+print("Slicing every 2nd item in list")
+print(mylist[::2])
+# reverse elements
+print("Slicing in a reverse step")
+print(mylist[::-1])
+```
+
+## List manipulation 2
+
+```
+# Adding an element to the back of the list using append()
+my_list = [10,20,30,40]
+my_list.append(50)
+print(my_list)
+# Inserting an element into a certain position in the list using insert()
+# insert 25 into index 2. Remember the first element in the list is index 0
+# insert(index, object)
+my_list.insert(2,25)
+print(my_list)
+# Sorting the values
+sorted(my_list)
+print(my_list)
+print(sorted(my_list)) # notices sorted does not change the list itself.
+# searching for an item in the list
+shopping_list = ["apple","pear","milk","tea"]
+If "milk" in shopping_list:
+   print("Buy milk")
+if "strawberry" not in shopping_list:
+   shopping_list.append("strawberries")
+# the not logic can be used here.
+# can add an action if something is or is not in the list        
+```
+
+### Exercises:
+1. Use list comprehension to declare a list my_list >> [0,1,2,3,4].
+2. Add an integer 5 to the list
+3. Add a float 2.345 between 4 and 5  
+4. Sort my_list 
+
+
+
