@@ -1,0 +1,91 @@
+################ my_list = [0,1,2,3,4,3,2,1,0]. Use a for loop to change the values to [1,2,3,4,5,4,3,2,1] ################
+my_list = [0,1,2,3,4,3,2,1,0]
+for i in range(9):
+  my_list[i] += 1 # add 1 to itself
+print(my_list)
+
+
+
+
+################ Use a for loop to change all the 3s in my_lists into 9s. ################
+for i in range(9):
+  if my_list[i] == 3:
+    my_list[i] = 9
+print(my_list)
+
+
+
+
+################ Use a for loop to multiply all the 4s by 8. ################
+for i in range(9):
+  if my_list[i] == 4:
+    my_list[i] *= 8 # mutiply itself by 8
+print(my_list)
+
+
+
+################ Use a for loop to sum all the items in my_list. Hint: use a separate variable ################
+my_sum = 0
+for i in range(9):
+  my_sum += my_list[i]
+print(my_sum)
+
+
+
+################ Use a for loop to find how many odd and even numbers in my_list ################
+odd = 0
+even = 0
+for i in range(9):
+  if my_list[i]%2 == 0:
+    even += 1
+  elif my_list[i] ==1:
+    odd += 1
+print("ODD: ", odd)
+print("EVEN :",even)
+
+
+
+################ new_list = [10,20,30,40,50,60,70,80,90,100]. Use a for loop to print out every item in the list less than 74. ################
+new_list = [10,20,30,40,50,60,70,80,90,100]
+for i in range(len(new_list)):
+  if new_list[i] < 74:
+    print(new_list[i])
+    
+    
+################ Use a for loop to print out the following tree, getting user inputs: ################
+n = int(input("How many row of triangles: ")) 
+
+for i in range(1,n+1):
+  print(i * "*")
+
+
+################ Activity : Pyramid ################
+
+n = int(input("How many row of triangles: "))
+
+# n = 4
+#print("   /\\")     # front = 3 mid = 0
+#print("  /__\\")    # front = 2 mid = 2
+#print(" /____\\")   # front = 1 mid = 4
+#print("/______\\")  # front = 0 mid = 6
+
+# n = 3
+#print("  /\\")     # front = 2 mid = 0
+#print(" /__\\")    # front = 1 mid = 2
+#print("/____\\")   # front = 0 mid = 4
+
+# for each row
+# front_spaces = n-1, until 0
+# mid_spaces = i*2
+
+# we put the user input n into front_spaces 
+# for use in the while loop
+front_spaces = n
+for i in range(0,n):
+    if i==0:
+        front_spaces = n-1
+        print(front_spaces*" "+"/\\")
+    else:
+        front_spaces -= 1
+        mid_spaces = i*2
+        print(front_spaces*" "+"/"+mid_spaces*"_"+"\\")
