@@ -126,3 +126,49 @@ my_var_3 = bool(1) # what is the value of my_var_3?
 | /             | divide        |
 | **            | exponential   |
 | %             | modulo, to find the remainder of the division      |
+
+
+### To import the math library: 
+To use math functions, we need to import a pre-included library from Python
+
+`import math # at the start of the py file`
+
+To use Pi for example:
+
+`from math import pi # at the start of the py file`
+
+To use trigonometry:
+
+```
+math.cos(variable)
+math.tan(variable)
+math.sin(variable)
+```
+Math reference: https://docs.python.org/3/library/math.html
+
+#### Examples:
+
+```
+import math
+from math import pi
+
+# Area of circle of radius 20
+print(pi*20**2)
+```
+A different represenation:
+```
+import math
+
+# Area of circle of radius 20
+print(math.pi*20**2)
+```
+
+Exercises:
+1. Convert user input into an integer
+2. Calculate the Area of a circle with radius 5.
+    - declare all your variables as you would in algebra
+    - import the math library
+    - Steps 3: assign the value to the output of the circle formula
+    - show in output using print
+3. Get user input for radius, output the area  
+4. Calculate the area of a triangle using [ ½ * base * height ] formula, from user input.
