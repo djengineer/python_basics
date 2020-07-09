@@ -497,9 +497,9 @@ the "time" library is used with a sleep function.
 time.sleep(1) will pause the program for 1 second before continuing with the while loop.
 
 ## Exercises:
-1. my_list = [0,1,2,3,4,3,2,1,0]. Use a for l¬¬¬¬oop to change the values to [1,2,3,4,5,4,3,2,1]
+1. my_list = [0,1,2,3,4,3,2,1,0]. Use a for loop to change the values to [1,2,3,4,5,4,3,2,1]
 2. Use a for loop to change all the 3s in my_lists into 9s.
-3. Use a for loop to multiply all the ¬¬4s by 8.
+3. Use a for loop to multiply all the 4s by 8.
 4. Use a for loop to sum all the items in my_list. Hint: use a separate variable
 5. Use a for loop to find how many odd and even numbers in my_list
 6. new_list = [10,20,30,40,50,60,70,80,90,100]. Use a for loop to print out every item in the list less than 74.
@@ -510,3 +510,111 @@ time.sleep(1) will pause the program for 1 second before continuing with the whi
 Change your right-angles triangle tree to look something like this. You can use * symbols in your last exercise.
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m6-pyramid.png "pyramid")
 
+# Module 7: More Data Structures
+## Multi-dimensional lists / 2D-Arrays
+
+Two-dimensional arrays can be used to represent a chess board for example.
+
+```
+# A multidimensional list is a list within a list
+# also called a multidimensional array
+#
+# recall matrix and matrices your mathematics
+# a 2x2 matrix
+# index positions look like this
+# | [0][0] , [0][1] |
+# | [1][0] , [1][1] |
+multi_list = [
+                [1,2],
+                [3,4]
+             ]
+print(multi_list[0][0])
+print(multi_list[0][1])
+print(multi_list[1][0])
+print(multi_list[1][1])
+multi_list.append([5,6])
+print("The multi list now has 3 list elements")
+print(multi_list)
+print("Print out the newly appended list")
+print(multi_list[2][0])
+print(multi_list[2][1])
+```
+### Looping through a 2D-array
+
+E.g. This code will print out the items in the 2D list in order.
+```
+multi_list = [
+                [1,2],
+                [3,4]
+             ]
+# to print out all values in order, like the prev codes
+for row in multi_list:
+    for cell_value in row:
+        print(cell_value)
+# But what if we want to change the cell value??
+# to change the value
+multi_list[0][1] = "hello"
+# this changes the value at position [0][1] to "hello"
+print(multi_list)
+```
+We can use this to replace elements if we do not know their position.
+E.g. This code has a "hello" at [0][1]. 
+1. We loop through the whole list
+2. if the element matches "hello"
+3. Change the element to "world"
+```
+#We want to loop through list, find "hello" and replace it with "world"
+multi_list = [
+                [1,"hello"],
+                [3,4]
+             ]
+# the for loop previously does not include an index
+# for us to use a 2D-array like mylist[i]
+# we need to generate the index to get the index
+for i, row in enumerate(multi_list):
+    for j, cell in enumerate(row):
+        if cell == "hello":
+            multi_list[i][j] = "world" 
+        print(multi_list[i][j]) # print after changing
+# we just used a for loop to run through the 
+# 2D Array, searching for "hello" and changing it to "world"
+```
+## Dictionary Data type
+
+Dictionary type has a "key" and a "value", forming what we call a "key-value" pair.
+
+### Using Dictionaries
+```
+# dictionaries data structures
+# relationship between dictionaries and lists
+empty_dictionary = {}
+empty_list = []
+my_list = ["Good Morning from list"]
+# my_dict = { key : value }
+# we call this a key-value pair.
+my_dict = {"greeting_1":"Good Morning from dictionary"}
+# to print good morning
+print(my_list[0])
+# unlike lists, there is no indexing in dictionaries,
+# we find the value by searching in the dictionary with the key
+# in this case we are printing the value of the greeting_1 key
+print(my_dict["greeting_1"])
+# to add to the list and dictionary
+my_list.append("Good Afteroon")
+my_dict["greeting_2"] = "Good Afternoon"
+# confirm contents 
+print(my_list)
+print(my_dict)
+# to print good afternoon
+print(my_list[1])
+print(my_dict["greeting_2"])
+# we can have a list of dictionaries and a dictionary of lists
+```
+## Exercises:
+1.	Use list comprehension to declare a list my_list >> [0,1,2,3,4].
+2.	Add an integer 5 to the list
+3.	Add a float 2.345 between 4 and 5  
+4.	Sort my_list and save my_list
+5.	Declare and empty 2D array  multi_list = [[],[],[]]
+6.	Use a nested for loop to populate the list [0,1,2,3] for each row.
+7.	[Challenge] For each cell in the 2D array, change the integers into string i.e. 0 => “zero”, 1 => ”one” , 2 => “two”
