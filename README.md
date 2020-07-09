@@ -183,3 +183,20 @@ hint: look at the math reference if you are unsure
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-area2.png "Area 2")
 
 where a = 12, b = 20, C = π/6
+
+### Activity:  Cashier Checkout Program
+
+Use what you have learnt so far to program a cashier checkout out program for a store which sells apples, pears and strawberries.
+
+An apple sells for $1
+
+A pear sells for $1.50
+
+Strawberries sell for $2
+
+The store gives 20% discount off the total price.
+
+Bonus: draw a better looking cash register.
+
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-cashier.png "Area 2")
+
