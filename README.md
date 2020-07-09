@@ -461,3 +461,52 @@ for i in range(0,4,2):
     for a in range(0,4,2):
         print(i,a)
 ```
+## While Loop with Break
+
+We can break out of a while loop when certain conditions are met.
+
+```
+hungry = True
+while hungry == True: #infinite loop
+    print("I had brunch")
+    print("I am still hungry")
+    print("I had snacks")
+    hungry = False  # switch hungry to False
+    if hungry == False:
+        break   #this breaks out of the while loop
+    print("I had dinner")
+    print("Done - outside of loop")
+```
+## Example: a clock function
+
+We print the current time every one second
+```
+# more on date time https://docs.python.org/3/library/time.html
+import datetime
+import time
+today = datetime.date.today().strftime("%B %d, %Y")
+print(today)
+while True:
+    # hour:minute:seconds
+    time_now = datetime.datetime.now().strftime("%H:%M:%S")
+    print(time_now)
+    time.sleep(1)
+```
+The "datetime" library is used to get the date and time of the server.
+the "time" library is used with a sleep function.
+time.sleep(1) will pause the program for 1 second before continuing with the while loop.
+
+## Exercises:
+1. my_list = [0,1,2,3,4,3,2,1,0]. Use a for l¬¬¬¬oop to change the values to [1,2,3,4,5,4,3,2,1]
+2. Use a for loop to change all the 3s in my_lists into 9s.
+3. Use a for loop to multiply all the ¬¬4s by 8.
+4. Use a for loop to sum all the items in my_list. Hint: use a separate variable
+5. Use a for loop to find how many odd and even numbers in my_list
+6. new_list = [10,20,30,40,50,60,70,80,90,100]. Use a for loop to print out every item in the list less than 74.
+7. Use a for loop to print out the following tree, getting user inputs:
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m6-xmastree.png "half triangle")
+
+## Activity 1:
+Change your right-angles triangle tree to look something like this. You can use * symbols in your last exercise.
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m6-pyramid.png "pyramid")
+
