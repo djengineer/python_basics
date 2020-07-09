@@ -406,8 +406,8 @@ if "strawberry" not in shopping_list:
 
 ### Exercises:
 1. Use list of 5 randomly generated numbers.
-2. Add an integer 5 to the back of the list
-3. Add a float 2.345 between 4 and 5  
+2. Add an integer 3 to the back of the list
+3. insert a float 2.345 between 4th and 5th element  
 4. Sort my_list 
 
 # Module 5: Loops
