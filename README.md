@@ -163,7 +163,7 @@ import math
 print(math.pi*20**2)
 ```
 
-Exercises:
+### Exercises:
 1. Convert user input into an integer
 2. Calculate the Area of a circle with radius 5.
     - declare all your variables as you would in algebra
@@ -175,3 +175,11 @@ Exercises:
 5. Find area of an Equilateral Triangle using the below formula: 
 
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-area.png "Area 1")
+
+where s is the length of one side of the triangle.
+hint: look at the math reference if you are unsure
+6. Find area of triangle using trigonometry:
+
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-area2.png "Area 2")
+
+where a = 12, b = 20, C = π/6
