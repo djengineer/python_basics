@@ -633,13 +633,10 @@ print(my_dict["greeting_2"])
 # we can have a list of dictionaries and a dictionary of lists
 ```
 ## Exercises:
-1.	Use list comprehension to declare a list my_list >> [0,1,2,3,4].
-2.	Add an integer 5 to the list
-3.	Add a float 2.345 between 4 and 5  
-4.	Sort my_list and save my_list
-5.	Declare and empty 2D array  multi_list = [[],[],[]]
-6.	Use a nested for loop to populate the list [0,1,2,3] for each row.
-7.	[Challenge] For each cell in the 2D array, change the integers into string i.e. 0 => “zero”, 1 => ”one” , 2 => “two”
+
+1.	Declare and empty 2D array  multi_list = [[],[],[]]
+2.	Use a nested for loop to populate the list [0,1,2,3] for each row.
+3.	[Challenge] For each cell in the 2D array, change the integers into string i.e. 0 => “zero”, 1 => ”one” , 2 => “two”
 
 # Module 7: Functions
 Functions are reusable block of codes.
