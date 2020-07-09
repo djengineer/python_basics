@@ -335,9 +335,11 @@ print(my_list[3]) # this will give us "fries"
 ```
 mylist = [0,1,2,3,4]
 print(mylist)
+
 # append() is to add a value to the back of the list.
 mylist.append(10)
 print(mylist) # 10 is added to the back of the list
+
 # len() is to find out the length of the list.
 # in this case, it is how many elements are there.
 print("Length of my list is",len(mylist))
@@ -374,15 +376,18 @@ print(mylist[::-1])
 my_list = [10,20,30,40]
 my_list.append(50)
 print(my_list)
+
 # Inserting an element into a certain position in the list using insert()
 # insert 25 into index 2. Remember the first element in the list is index 0
 # insert(index, object)
 my_list.insert(2,25)
 print(my_list)
+
 # Sorting the values
 sorted(my_list)
 print(my_list)
 print(sorted(my_list)) # notices sorted does not change the list itself.
+
 # searching for an item in the list
 shopping_list = ["apple","pear","milk","tea"]
 If "milk" in shopping_list:
@@ -524,6 +529,7 @@ Two-dimensional arrays can be used to represent a chess board for example.
 # index positions look like this
 # | [0][0] , [0][1] |
 # | [1][0] , [1][1] |
+
 multi_list = [
                 [1,2],
                 [3,4]
@@ -551,6 +557,7 @@ multi_list = [
 for row in multi_list:
     for cell_value in row:
         print(cell_value)
+	
 # But what if we want to change the cell value??
 # to change the value
 multi_list[0][1] = "hello"
@@ -571,11 +578,13 @@ multi_list = [
 # the for loop previously does not include an index
 # for us to use a 2D-array like mylist[i]
 # we need to generate the index to get the index
+
 for i, row in enumerate(multi_list):
     for j, cell in enumerate(row):
         if cell == "hello":
             multi_list[i][j] = "world" 
         print(multi_list[i][j]) # print after changing
+	
 # we just used a for loop to run through the 
 # 2D Array, searching for "hello" and changing it to "world"
 ```
@@ -590,24 +599,31 @@ Dictionary type has a "key" and a "value", forming what we call a "key-value" pa
 empty_dictionary = {}
 empty_list = []
 my_list = ["Good Morning from list"]
+
 # my_dict = { key : value }
 # we call this a key-value pair.
 my_dict = {"greeting_1":"Good Morning from dictionary"}
+
 # to print good morning
 print(my_list[0])
+
 # unlike lists, there is no indexing in dictionaries,
 # we find the value by searching in the dictionary with the key
 # in this case we are printing the value of the greeting_1 key
 print(my_dict["greeting_1"])
+
 # to add to the list and dictionary
 my_list.append("Good Afteroon")
 my_dict["greeting_2"] = "Good Afternoon"
+
 # confirm contents 
 print(my_list)
 print(my_dict)
+
 # to print good afternoon
 print(my_list[1])
 print(my_dict["greeting_2"])
+
 # we can have a list of dictionaries and a dictionary of lists
 ```
 ## Exercises:
