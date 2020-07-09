@@ -399,5 +399,65 @@ if "strawberry" not in shopping_list:
 3. Add a float 2.345 between 4 and 5  
 4. Sort my_list 
 
+# Module 6: Loops
+
+### For Loop
+```
+# Try this out
+for i in range(10):
+    print(i)
+    print(i, "hello")
+```
+We can set specific ranges
+```
+# Try this out
+for i in range(5,10):
+    print(i, "hello")
+```
+We can skip steps. For example, we want it to print for every 2nd numnber
+
+```
+# Try this out
+for i in range(0,10,2):
+    print(i, "hello")
+```
+### While Loop
+
+```
+i = 0
+while i < 10:
+    print(i)
+    i += 1 # add 1 to i itself
+```
+These two codes both do the same thing, but written in different ways.
+
+## Looping through Lists
+
+```
+mylist = ["tom","harry","john"]
+numberlist = [10,123,9,2,10]
+for item in mylist:
+    print(item)
+print(" ")
+# for each number in the list, print number
+for number in numberlist:
+    print(number)
+```
+## Nested Loops or "Loops within Loops
+```
+x = int(input("Enter a number for Range: "))
+#int(variable) changes the string from input to integer
+for i in range(x):
+    for a in range(x):
+        print(i,a)
+```
+Run the above and see what it does. i will stay the same while a increases. When a completes, i will increase by one and repeat the cycle.
 
 
+## Nested loops with steps
+```
+# the parameters for range is range(start,end,step)
+for i in range(0,4,2):
+    for a in range(0,4,2):
+        print(i,a)
+```
