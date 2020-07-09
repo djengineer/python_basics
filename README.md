@@ -870,4 +870,14 @@ Make your own clock app
 4. Combine the basic pygame example with the game loop
 5. Revisit our clock function in module 6.
 
+# EXTRA Challenges
+
+1. Build your own hangman word game.
+2. Build a rock-paper-scissors game.
+3. Spice up your clock with an image background, background music or however else you wish to build.
+https://www.pygame.org/docs/ref/image.html
+https://www.pygame.org/docs/ref/mixer.html
+
+Challenge yourself. If you are stuck, you can find my solutions uploaded as well.
+
 The end =============================
