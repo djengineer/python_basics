@@ -317,7 +317,7 @@ print(number)
 1. Create a Role Playing Game (RPG) using input(), print(), and if/elif/else statements. Come up with an interesting story to entertain your player with!
 You can even use math, and the random function to generate some interesting stories with probabilities in the game’s outcome!
 
-# Module 5: Data Structure 1 - Lists
+# Module 4: Data Structure 1 - Lists
 
 Lists are used to store multiple data into one variable.
 Think of it as a shelf. We use square brackets to signify lists.
@@ -330,6 +330,7 @@ Declaring a list with data inside:
 # A list is like a shelf with numbered spaces
 # A list’s index starts from 0, e.g [0,1,2,3…]
 # my_list[0] will call the first item in the list
+
 my_list = ["pizza","noodles","burger","fries"]
 print(my_list[0]) # this will give us "pizza"
 print(my_list[3]) # this will give us "fries"
@@ -409,7 +410,7 @@ if "strawberry" not in shopping_list:
 3. Add a float 2.345 between 4 and 5  
 4. Sort my_list 
 
-# Module 6: Loops
+# Module 5: Loops
 
 ### For Loop
 ```
@@ -520,7 +521,7 @@ time.sleep(1) will pause the program for 1 second before continuing with the whi
 Change your right-angles triangle tree to look something like this. You can use * symbols in your last exercise.
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m6-pyramid.png "pyramid")
 
-# Module 7: More Data Structures
+# Module 6: More Data Structures
 ## Multi-dimensional lists / 2D-Arrays
 
 Two-dimensional arrays can be used to represent a chess board for example.
@@ -640,7 +641,7 @@ print(my_dict["greeting_2"])
 6.	Use a nested for loop to populate the list [0,1,2,3] for each row.
 7.	[Challenge] For each cell in the 2D array, change the integers into string i.e. 0 => “zero”, 1 => ”one” , 2 => “two”
 
-# Module 8: Functions
+# Module 7: Functions
 Functions are reusable block of codes.
 They take in some arguments(values), process it and returns a value to the main program.
 
@@ -739,7 +740,7 @@ print("The sum of the 2 numbers are",result)
 5.	If is_eligible is True, calculate and show the final_price, else show the price without discount 
 6.	Trying using the check_eligible function from within the calc_cost function
 
-# Introduction to PyGame and game design
+# Module 8: Introduction to PyGame and game design
 
 PyGame is a library that we can use to create apps with Graphical User Interface.
 
