@@ -28,7 +28,8 @@ If you install Python onto your own computer:
 - https://www.python.org/downloads/
 
 Once you installed Python3.6, you can use IDLE to run your codes.
-To install PyGame, in the search bar on Windows, run cmd.exe
+To install PyGame, in the search bar on Windows, run cmd.exe.
+
 Run the following command in the command line:
 
 `pip install pygame` or `pip3 install pygame`
