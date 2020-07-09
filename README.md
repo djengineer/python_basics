@@ -405,8 +405,8 @@ if "strawberry" not in shopping_list:
 ```
 
 ### Exercises:
-1. Use list comprehension to declare a list my_list >> [0,1,2,3,4].
-2. Add an integer 5 to the list
+1. Use list of 5 randomly generated numbers.
+2. Add an integer 5 to the back of the list
 3. Add a float 2.345 between 4 and 5  
 4. Sort my_list 
 
@@ -521,7 +521,7 @@ time.sleep(1) will pause the program for 1 second before continuing with the whi
 Change your right-angles triangle tree to look something like this. You can use * symbols in your last exercise.
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m6-pyramid.png "pyramid")
 
-# Module 6: More Data Structures
+# Module 6: Data Structures 2 - 2D Lists and Disctionaries
 ## Multi-dimensional lists / 2D-Arrays
 
 Two-dimensional arrays can be used to represent a chess board for example.
