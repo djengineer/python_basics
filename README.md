@@ -2,6 +2,14 @@
 Created by Wong Ding Jie
 Copyright 2018 - 2020
 
+# How to use this
+Learners should follow the example code given and plug it into their own Python environment. Or learners can use online compilers like https://repl.it/
+
+1. Run the code examples
+2. Understand how it works
+3. Try out the challenges
+4. There are extra challenges at the very bottom if you finish your exercises fast.
+
 # Introduction/Requirements
 Python is used for many applications such as database, artificial intelligence, internet-of-things and many more.
 
