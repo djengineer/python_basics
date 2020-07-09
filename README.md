@@ -3,6 +3,9 @@ Created by Wong Ding Jie
 Copyright 2018 - 2020
 
 # Introduction/Requirements
+Python is used for many applications such as database, artificial intelligence, internet-of-things and many more.
+
+File extension is **.py**
 
 Python 3.6
 
