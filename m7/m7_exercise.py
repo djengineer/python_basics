@@ -24,14 +24,28 @@ def user_input():
     output = {"a_amt":apple_amount,"p_amt":pear_amount,"s_amt": strawberry_amount}    
     return(output)
 
+
+def check_elidgible(total_price):
+    if total_price > 10:
+        return True
+    else:
+        return False
+
 def calculate(apple_amount,pear_amount,strawberry_amount):
     totalprice = apple_price * apple_amount \
                 + pear_price * pear_amount  \
                 + strawberry_price * strawberry_amount 
     #backslashes help format the lines to see it clearer
-    totalprice_discount = totalprice * 0.8
-    print("Total price is $",totalprice_discount)
+    if check_elidgible(totalprice) == True:
+        totalprice_discount = totalprice * 0.5
+        print("Price is discounted")
+        print("Total price is $",totalprice_discount)
+    else:
+        print("No discount given")
+        print("Total price is $",totalprice)
 
+
+## main program here
 var_init()
 amount = user_input()
 # remember that the sequence is important
