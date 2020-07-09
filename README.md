@@ -200,3 +200,24 @@ Bonus: draw a better looking cash register.
 
 ![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-cashier.png "Area 2")
 
+# Module 3 : If / Else Conditional Statements
+
+## Comparison Operators:
+The output of a comparison will always return a True / False
+
+| Operator      | Meaning       |
+| ------------- |:-------------:|
+| ==            | Equal to      |
+| >             | More than     |
+| >=            | More than or equal to     |
+| <             | Less than        |
+| <=            | Less than or equal to   |
+| !=            | Not equal to      |
+
+## Additional Logical operators
+
+| Operator      |
+| ------------- |
+| AND           |
+| OR            |
+| NOT           |
