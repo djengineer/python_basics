@@ -198,21 +198,9 @@ https://docs.python.org/3/library/math.html
 
 where a = 12, b = 20, C = π/6
 
-### Activity:  Cashier Checkout Program
-
-Use what you have learnt so far to program a cashier checkout out program for a store which sells apples, pears and strawberries.
-
-An apple sells for $1
-
-A pear sells for $1.50
-
-Strawberries sell for $2
-
-The store gives 20% discount off the total price.
-
-Bonus: draw a better looking cash register.
-
-![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-cashier.png "Area 2")
+## Activities:
+1. Create a Role Playing Game (RPG) using input(), print(), and if/elif/else statements. Come up with an interesting story to entertain your player with!
+You can even use math, and the random function to generate some interesting stories with probabilities in the game’s outcome!
 
 # Module 3 : If / Else Conditional Statements
 
@@ -322,9 +310,23 @@ print(number)
     3. print out the user’s choice.
 3. Calculating probabilities: if user chooses apple, there is a 50% chance that that apples are sold out. 
 
-## Activities:
-1. Create a Role Playing Game (RPG) using input(), print(), and if/elif/else statements. Come up with an interesting story to entertain your player with!
-You can even use math, and the random function to generate some interesting stories with probabilities in the game’s outcome!
+
+
+### Activity:  Cashier Checkout Program
+
+Use what you have learnt so far to program a cashier checkout out program for a store which sells apples, pears and strawberries.
+
+An apple sells for $1
+
+A pear sells for $1.50
+
+Strawberries sell for $2
+
+The store gives 20% discount off the total price.
+
+Bonus: draw a better looking cash register.
+
+![alt text](https://github.com/djengineer/python_basics/blob/master/imgs/m2-cashier.png "Area 2")
 
 # Module 4: Data Structure 1 - Lists
 
