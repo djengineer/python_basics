@@ -41,7 +41,7 @@ Run the following command in the command line:
 Getting the raw input from the command line:
 `input(“What is your name”)`
 
-Line break in the command:
+Line in the command:
 
 `input(“What is your name\n>>>>”)`
 
@@ -497,7 +497,7 @@ while hungry == True: #infinite loop
     if hungry == False:
         break   #this breaks out of the while loop
     print("I had dinner")
-    print("Done - outside of loop")
+print("Done - outside of loop")
 ```
 ## Example: a clock function
 
