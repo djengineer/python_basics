@@ -2,6 +2,10 @@
 Created by Wong Ding Jie
 Copyright 2018 - 2020
 
+For expanded codes on Gello Game, see https://github.com/djengineer/pygamecurriculum
+
+For created web servers with python, see https://github.com/djengineer/flask-python3-starter-kit
+
 # How to use this
 Learners should follow the example code given and plug it into their own Python environment. Or learners can use online compilers like https://repl.it/
 
